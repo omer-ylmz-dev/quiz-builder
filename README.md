@@ -96,18 +96,7 @@ npm run dev
 
 The frontend will be running at http://localhost:3000.
 
-📂 Folder Structure
-
-quiz-builder/
-├── backend/
-│   ├── src/
-│   ├── models/
-│   └── seed.ts
-├── frontend/
-│   ├── src/pages/
-│   ├── components/
-│   └── types/
-
+---
 
 🧪 Features
 
@@ -124,6 +113,9 @@ View all quizzes
 View single quiz details
 
 Delete quiz
+
+
+---
 
 
 ##  Author
