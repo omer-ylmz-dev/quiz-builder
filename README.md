@@ -15,22 +15,26 @@ Create and manage custom quizzes with multiple question types.
 ## ⚙️ Setup
 
 ### 1. Clone the repo
-```bash
+
+```
+bash
 git clone https://github.com/omer-ylmz-dev/quiz-builder.git
 cd quiz-builder
+```
 
 
 ### 2. Backend Setup
 #### 2.1 Install Dependencies
-````bash
+```
+bash
 cd backend
 npm install
-
+```
 
 #### 2.2 Set Up Environment Variables
 
 Edit the .env file to match your local PostgreSQL settings:
-
+```
 ini
 DB_NAME=quizdb
 DB_USER=postgres
@@ -38,23 +42,29 @@ DB_PASSWORD=yourpassword
 DB_HOST=localhost
 DB_PORT=5432
 PORT=5000
-
+```
 
 #### 2.3 Set Up Database
 ##### Option 1: Seed Database Manually
 
 Run the following script to seed the database with an example quiz:
 
-```bash
+```
+bash
 npm run seed
+```
 
 ##### Option 2: Automatically Sync Database
 
 The app will automatically sync the database upon starting. This will create the necessary tables and relationships in your PostgreSQL database.
 
 #### 2.4 Start Backend
+
+```
 bash
 npm run dev
+```
+
 The backend will be running at http://localhost:5000.
 
 
@@ -62,22 +72,28 @@ The backend will be running at http://localhost:5000.
 ### 3. Frontend Setup
 ##### 3.1 Install Dependencies
 
-```bash
+```
+bash
 cd frontend
 npm install
+```
 
 ##### 3.2 Set Up Environment Variables
 
 Edit the .env file and make sure the API base URL is correctly set:
 
+```
 ini
 VITE_API_BASE_URL=http://localhost:5000
-
+```
 
 ##### 3.3 Start Frontend
 
-```bash
+```
+bash
 npm run dev
+```
+
 The frontend will be running at http://localhost:3000.
 
 📂 Folder Structure
